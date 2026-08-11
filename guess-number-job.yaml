@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: guess-number-job
+spec:
+  ttlSecondsAfterFinished: 300
+  template:
+    spec:
+      containers:
+        - name: game
+          image: guess-number-console:v1
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Never
