@@ -3,11 +3,11 @@ kind: Job
 metadata:
   name: guess-number-job
 spec:
-  ttlSecondsAfterFinished: 300
+  ttlSecondsAfterFinished: 60
   template:
     spec:
       containers:
-        - name: game
+        - name: guess-number
           image: guess-number-console:v1
-          imagePullPolicy: IfNotPresent
+          command: ["java", "GuessNumberGameConsole"]
       restartPolicy: Never

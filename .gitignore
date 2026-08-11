@@ -1,39 +1,37 @@
-# --- Компилированные файлы и артефакты ---
+# Артефакты сборки
 *.class
 *.jar
 *.war
 *.ear
-
-# --- IntelliJ IDEA ---
-.idea/
 out/
+
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
 *.iws
 
-# --- Docker ---
+# Docker и K8s локальные файлы
 docker-compose.override.yml
 .dockerenv
 Dockerfile.bak
-
-# --- Kubernetes / Minikube ---
 minikube/
 kind/
 kubeconfig
 
-# --- Локальные скрипты и секреты ---
+# Локальные скрипты и секреты
 deploy-game-local.sh
 .env
 *.key
 *.pem
 
-# --- Логи и временные файлы ---
+# Логи и временные файлы
 *.log
 logs/
 tmp/
 temp/
 
-# --- Системный мусор ---
+# Системный мусор
 .DS_Store
 Thumbs.db
 Desktop.ini
